@@ -1,12 +1,13 @@
 import React from "react";
+import ClassComponent from "./TugasKomponen/ClassComponent";
 
 
-export default class TugasKomponen extends React.Component {
+class TugasKomponen extends React.Component {
 
     render() {
-        return (
+        return(
             <div>
-                <KomponenProp nama="Kadek Sucipta"/>
+                <ClassComponent />
             </div>
         )
     }

@@ -1,17 +1,15 @@
-import React from "react";
+import React from "react"
 
-class ClassComponent extends React.Component{
+class KomponenProp extends React.Component {
 
     render() {
         return(
             <div>
-                <h1>komponen ini dibuat dengan class componennt </h1>
-                <h2>hello dunia</h2>
-                
+                <h1>kadek</h1>
+                <p>sucipta</p>
             </div>
         )
     }
 }
 
-
-export default ClassComponent
+export default KomponenProp

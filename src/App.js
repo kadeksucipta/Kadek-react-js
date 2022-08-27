@@ -1,11 +1,11 @@
-import Komponen from "./Materi React/Komponen";
+import TugasKomponen from './Tugas react/TugasKomponen'
 
 function App() {
   return (
     <div className="App">
-     <Komponen />
+      <TugasKomponen/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
