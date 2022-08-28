@@ -1,11 +1,10 @@
-import TugasKomponen from './Tugas react/TugasKomponen'
+import TugasKomponen from "./Tugas react"
 
 function App() {
   return (
     <div className="App">
-      <TugasKomponen/>
+      <TugasKomponen />
     </div>
   )
 }
-
 export default App
