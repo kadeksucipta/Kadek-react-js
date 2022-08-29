@@ -1,4 +1,4 @@
-import TugasKomponen from "./Tugas react/index"
+import TugasKomponen from "./Tugas react/Index"
 
 function App() {
   return (
