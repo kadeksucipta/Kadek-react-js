@@ -1,0 +1,22 @@
+.btn {
+    border: 2px solid black;
+    background-color: #fff;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.info {
+    border-color: rgb(255, 99, 125);
+    color:  rgb(255, 64, 96);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 40px;
+}
+
+.info:hover {
+    background: rgb(255, 141, 160);
+    color: white;
+}
