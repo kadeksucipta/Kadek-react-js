@@ -1,17 +1,12 @@
 import React from "react";
-import App from "../App";
-import 'bootstrap/dist/css/bootstrap.css';
-import StylingComponent from "/StylingComponent/StylingBootstrap";
-
+import FormValidation from "./FormValidation/Form"
 
 export default class Tugasreact extends React.Component {
 
     render() {
         return(
             <div>
-                <StylingComponent />
-                <App />
-                                
+                 <FormValidation />  
             </div>
         )
     }

@@ -1,6 +1,7 @@
 .App {
-  text-align: center;
-  font-family: tw cen mt;
+  /* padding-left: 20%;
+  margin-top: 10%; */
+  text-align: left;
 }
 
 .App-logo {
@@ -82,4 +83,93 @@ u {
 }
 small {
   opacity: 80%;
+}
+
+body{
+  background: #3D8361;
+  font-family: calibri ;
+  color: rgb(54, 54, 54);
+}
+input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 95%;
+  padding: 10px;
+  border-radius:10px;
+  border-color: none;
+  border: none;
+  background: rgb(243, 243, 243);
+}
+input:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 95%;
+  padding: 10px;
+  border-radius:10px;
+  border-color: none;
+  border: none;
+  background: rgb(243, 243, 243);
+}
+h4 {
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+h5 {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: center;
+  font-weight: lighter;
+
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: rgb(0, 168, 197);
+  border-radius: 15px;
+  width: 100%;
+  height: 40px;
+  border-color: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.button:hover {
+  background: rgb(0, 137, 161);
+  color: white;
+}
+.btn{ 
+  background: rgb(255, 58, 58);
+  border-radius: 15px;
+  width: 20%;
+  height: 40px;
+  border-color: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.btn:hover {
+  background: rgb(220, 5, 5);
+  color: white;
+  color: white;
+}
+p{ 
+  text-align: center;
+}
+img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 280px;
+  height: 160px;
 }

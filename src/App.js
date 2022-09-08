@@ -1,22 +1,23 @@
-import "./App.css"
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import Form from 'react-bootstrap/Form';
-
-import StylingComponent from "./Tugasreact/StylingComponent/StylingBootstrap";
-
 import React from 'react';
+
+import FormValidation from './Tugasreact/FormValidation/Form';
+import FormLogin from "./Tugasreact/FormValidation/FormLogin/Login"
+import { Route, Routes } from 'react-router-dom';
+import "./App.css"
 
 
 function App() {
   return (
-    <div className="App">
-      <StylingComponent />
 
+    <div>
       <React.Fragment>
+      <Routes>
+          <Route path="/" element={<FormValidation />} />
+          <Route path="/" element={<FormLogin />} />
+      </Routes>
+      </React.Fragment>
+
+       {/* <React.Fragment>
         <div className='jumbotron' fluid>
           <Container>
             <h1>Kadek Sucipta</h1>
@@ -103,7 +104,7 @@ function App() {
                     placeholder="input your email"
                   />
 
-                  {/* -- */}
+
 
                   <div style={{width: "40px"}}>
                     <label for="exampleFormControlTextarea1" className="form-label mt-3">Message</label>
@@ -119,7 +120,7 @@ function App() {
                   </div>
                   
 
-                  {/* -- */}
+             
 
                   <button
                   style={{color: "white",
@@ -136,9 +137,9 @@ function App() {
             <div className='p-3 mb-0 mt-5 text-center footer' style={{ backgroundColor: 'black' }}>
             <small className="text-white text-center mt-5 footer">&copy; 2022. Sucipta Creative Team,  All rights reserved.</small>
             </div>
-            </React.Fragment>
-
-          </div>
+            </React.Fragment> */}
+            </div>
+          
   )
 }
 export default App
