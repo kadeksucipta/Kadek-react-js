@@ -1,12 +1,12 @@
 import React from "react";
-import FormValidation from "./FormValidation/Form"
+import Lifecycle from "./LifecycleComponent/Lifecycle";
 
 export default class Tugasreact extends React.Component {
 
     render() {
         return(
             <div>
-                 <FormValidation />  
+                 <Lifecycle />  
             </div>
         )
     }

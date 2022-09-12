@@ -1,0 +1,68 @@
+import React from "react";
+
+ export default class Title extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            title: "Lifecycle"
+        }
+        console.log("CONSTRUCTOR")
+    }
+
+    static getDerivedStateFromProps(props, state) {
+        console.group("get derived state from props")
+        console.log("props:", props)
+        console.log("state:", state)
+        console.groupEnd()
+        return null
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        console.group("SHOULD UPDATE")
+        console.log("nextProps:", nextProps)
+        console.log("nextState:", nextState)
+        console.log("this props:", this.props)
+        console.log("this state:", this.state)
+        console.groupEnd()
+
+        if(nextProps.count > 2) {
+            return false
+        }else {
+            alert(`
+            Maaf stock kami hanya tersisa 2
+            `)
+        }
+        return true
+    }
+
+
+    render() {
+        return(
+            <div>
+                <h1>{this.state.title} {this.props.name} : {this.props.count}</h1>
+            </div>
+        )
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.group("get snapshot before update")
+        console.log("prevProps:", prevProps)
+        console.log("prevState:", prevState)
+        console.log("this props:", this.props)
+        console.log("this state:", this.state)
+        console.groupEnd()
+        return null
+    }
+
+    componentDidMount() {
+        console.log("DID MOUNT")
+    }
+
+    componentDidMount() {
+        console.log("DID UPDATE")
+    }
+
+    componentDidMount() {
+        console.log("DID UNMOUNT")
+    }
+ }

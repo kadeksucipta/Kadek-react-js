@@ -1,21 +1,14 @@
 import React from 'react';
-
-import FormValidation from './Tugasreact/FormValidation/Form';
-import FormLogin from "./Tugasreact/FormValidation/FormLogin/Login"
-import { Route, Routes } from 'react-router-dom';
-import "./App.css"
+import Lifecycle from './Tugasreact/LifecycleComponent/Lifecycle';
+import "./App.css"                 
 
 
 function App() {
-  return (
 
+  return(
     <div>
-      <React.Fragment>
-      <Routes>
-          <Route path="/" element={<FormValidation />} />
-          <Route path="/" element={<FormLogin />} />
-      </Routes>
-      </React.Fragment>
+      <Lifecycle />
+
 
        {/* <React.Fragment>
         <div className='jumbotron' fluid>
