@@ -89,12 +89,16 @@ export default class Lifecycle extends React.Component {
                             <Card.Title><p>{item.title}</p></Card.Title>
                             <Card.Text><p>{item.author}</p></Card.Text>
                             <Card.Text><p>{item.description}</p></Card.Text>
-                            <a className= "btn" href={item.url}>Detail</a>
+                            <a className="btn" href={item.url}>Detail</a>
                         </Card.Body>
                     </Card></Col>
                     ))}
                     </Row>
                     </Container>
+                        <br />
+                        <div className='text-center p-2'>
+                            &copy; {new Date().getFullYear()} Copyright, {'SuciptaCreativeTeam, All rights reserved.'}
+                        </div>
             </React.Fragment>
             
         )
