@@ -1,6 +1,7 @@
 import React from 'react';
-import Lifecycle from './Tugasreact/LifecycleComponent/Lifecycle';
 import "./App.css"                 
+import HookNews from './Tugasreact/Hook/HookNews';
+import Lifecycle from './Tugasreact/LifecycleComponent/Lifecycle';
 
 
 function App() {

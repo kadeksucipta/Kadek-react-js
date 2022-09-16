@@ -72,23 +72,19 @@ export default class Lifecycle extends React.Component {
 
                 <Container>
                     {this.state.isLoading ? <Loader /> : ""}
-				    <Card
-					newsData={this.state.news}
-					isLoading={this.state.isLoading}
-				    />
 
                     <br />
 
                     <Row className="g-4" xs={2} md={4} lg={5}>
                     {this.state.data.length === 0 && <p className="text">Maaf berita tidak ditemukan</p>}
-                    {this.state.data.map(item => ( 
+                    {this.state.data.map((item, index)=> ( 
                      
-                    <Col> <Card className="h-100">
-                    <img src={item.urlToImage} alt="" />
+                    <Col key={index}> <Card className="h-100">
+                    <Card.Img variant="top" src={item.urlToImage} />
                         <Card.Body>
-                            <Card.Title><p>{item.title}</p></Card.Title>
-                            <Card.Text><p>{item.author}</p></Card.Text>
-                            <Card.Text><p>{item.description}</p></Card.Text>
+                            <Card.Title>{item.title}</Card.Title>
+                            <Card.Text>{item.author}</Card.Text>
+                            <Card.Text>{item.description}</Card.Text>
                             <a className="btn" href={item.url}>Detail</a>
                         </Card.Body>
                     </Card></Col>
