@@ -1,14 +1,13 @@
 import React from 'react';
 import "./App.css"                 
 import HookNews from './Tugasreact/Hook/HookNews';
-import Lifecycle from './Tugasreact/LifecycleComponent/Lifecycle';
 
 
 function App() {
 
   return(
     <div>
-      <Lifecycle />
+      <HookNews />
 
 
        {/* <React.Fragment>
