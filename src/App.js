@@ -1,9 +1,11 @@
 // import "./App.css"                 
 
+import Redux from "./Materi React/Redux";
+import ReduxX from "./Tugasreact/ReduxX";
 import Login from "./Tugasreact/Routing/Page/Login"
 
 export default function App() {
-  return <Login />;
+  return <ReduxX/>;
 
 
       /* <React.Fragment>

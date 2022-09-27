@@ -1,0 +1,21 @@
+.properti {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.min, .plus {
+    background: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 9px 0px;
+    color: black;
+    width: 100px;
+    border-radius: 20px;
+}
+span {
+    justify-content: center;
+    align-items: center;
+}
+h6 {
+    text-align: center;
+    font-size: 15px;
+}
