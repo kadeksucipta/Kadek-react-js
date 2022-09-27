@@ -1,0 +1,117 @@
+body {font-family: Arial rounded mt;}
+
+.sidebar {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    padding-left: 15%;
+    padding-bottom: 5px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: darkcyan;
+    overflow-x: hidden;
+    padding-top: 16px;
+}
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(1, 182, 182);
+    display: flex;
+    font-family: arial rounded mt;
+    position: relative;
+    left: 40%;
+    top: 10px;
+}
+.sidebar a:hover {
+    color: white;
+}
+.main {
+    margin-left: 160px;
+    padding: 0px 10px;
+}
+@media screen and (max-height: 450) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 10px;}
+}
+
+.cntnr {
+    text-align: center;
+}
+
+.kotak {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 500px;
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+input {
+    border: 2px solid rgba(99, 99, 99, 0.2) ;
+    border-radius: 8px;
+    width: 350px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 10px;
+    top: 20px;
+}
+.bttn {
+    margin-top: 20px;
+    width: 370px;
+    height: 40px;
+    background-color: darkcyan;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+hr {
+    width: 70%;
+}
+p {
+    color: rgb(0, 150, 231);
+    cursor: pointer;
+}
+p:hover{
+    color: rgb(0, 112, 173);
+    cursor: pointer;
+}
+.fa-user {
+    position: relative;
+    bottom: 30px;
+    width: 160%;
+    left: 20px;
+    color: black;
+}
+.fa-phone {
+    position: relative;
+    bottom: 30px;
+    width: 160%;
+    left: 20px;
+    color: black
+}
+textarea {
+    border: 2px solid rgba(99, 99, 99, 0.2) ;
+    border-radius: 10px;
+    width: 335px;
+    margin-top: 10px;
+    font-family: arial rounded mt;
+    padding: 3%;
+}
+.footer-contact {
+    display: flex;
+    text-align: center;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 40%;
+    margin-bottom: 10px;
+    color: rgb(94, 94, 94);
+    font-family: arial rounded mt;
+}

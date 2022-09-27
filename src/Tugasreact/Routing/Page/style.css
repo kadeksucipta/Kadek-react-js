@@ -1,0 +1,76 @@
+.container {
+    text-align: center;
+}
+
+.box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 500px;
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+}
+input {
+    border: 2px solid rgba(99, 99, 99, 0.2) ;
+    border-radius: 8px;
+    width: 300px;
+    height: 40px;
+    margin-top: 50px;
+    padding-left: 10px;
+    font-family: arial rounded mt;
+}
+button {
+    margin-top: 40px;
+    width: 360px;
+    height: 40px;
+    background-color: darkcyan;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-family: arial rounded mt;
+}
+hr {
+    width: 70%;
+}
+p {
+    color: rgb(0, 150, 231);
+}
+p:hover{
+    color: rgb(0, 112, 173);
+    cursor: pointer;
+}
+.btn {
+    border: 2px solid darkcyan;
+    background: none;
+    color: darkcyan;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: arial rounded mt;
+}
+.fa-user {
+    position: relative;
+    bottom: 35px;
+    width: 160%;
+    color: black;
+}
+.fa-key {
+    position: relative;
+    bottom: 35px;
+    width: 170%;
+    color: black
+}
+.footer-login {
+    display: flex;
+    text-align: center;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 40%;
+    margin-bottom: 10px;
+    color: rgb(94, 94, 94);
+    font-family: arial rounded mt;
+}

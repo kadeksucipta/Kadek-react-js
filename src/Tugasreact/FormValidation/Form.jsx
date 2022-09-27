@@ -113,7 +113,7 @@ class Form extends React.Component {
 
                 {/* <h4>Registrasi</h4> */}
                 <form className="input" onSubmit={this.handleSubmit}>
-                    <img src={toko} alt="" />
+                    {/* <img src={toko} alt="" /> */}
                     <br />
                     <Input type="email" name="email" label="Email" 
                      onChange={value => this.setState({email: value})}/>

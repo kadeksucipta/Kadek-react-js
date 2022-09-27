@@ -1,0 +1,123 @@
+body {font-family: Arial rounded mt;}
+
+.sidebar {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    padding-left: 15%;
+    padding-bottom: 5px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: darkcyan;
+    overflow-x: hidden;
+    padding-top: 16px;
+}
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(1, 182, 182);
+    display: flex;
+    font-family: arial rounded mt;
+    position: relative;
+    left: 40%;
+    top: 10px;
+}
+.sidebar a:hover {
+    color: white;
+}
+.main {
+    margin-left: 160px;
+    padding: 0px 10px;
+}
+@media screen and (max-height: 450) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 10px;}
+}
+/* img {
+    position: absolute;
+    left: 80px;
+} */
+.text-h1 {
+    font-family: arial rounded mt;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 20%;
+    left: 13%;
+}
+.text-h3 {
+    font-family: arial rounded mt;
+    position: absolute;
+    color: white;
+    line-height: 30px;
+    top: 28%;
+    left: 13%;
+    width: 20%;
+}
+.kubus {
+    max-width: 100%;
+    background: rgb(0, 125, 125);
+    width: 100%;
+    height: 600px;
+}
+.corne {
+    width: 550px;
+    height: 550px;
+    max-width: 100%;
+    margin-left: 54%;
+}
+.tombol {
+    max-width: 100%;
+    background: rgb(255, 221, 2);
+    width: 8%;
+    position: absolute;
+    top: 48%;
+    left: 13%;
+    border-radius: 20px;
+    color: black;
+}
+/* @media (min-width: 992px) { 
+    .corne{width: calc(140vw / 4 - 18px);}
+    .text-h1{font-size: 25pt;}
+    .text-h3{font-size: 15pt}
+}
+@media (min-width: 768px) { 
+    .corne{width: calc(100vw / 3 - 12px);}
+    .text-h1{font-size: 13pt;}
+    .text-h3{font-size: 12pt}
+  } */
+
+.segi {
+    max-width: 100%;
+    background: rgb(213, 248, 255);
+    width: 100%;
+    height: 90px;
+}
+.title-segi {
+    font-family: arial rounded mt;
+    position: absolute;
+    left: 13%;
+}
+.desk-segi {
+    position: absolute;
+    left: 60%;
+    width: 25%;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: arial rounded mt;
+    font-weight: lighter;
+}
+footer{
+    text-align: center;
+}
+.footer-home {
+    display: flex;
+    text-align: center;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: rgb(94, 94, 94);
+    font-family: arial rounded mt;
+}

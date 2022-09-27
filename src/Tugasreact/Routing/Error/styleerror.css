@@ -1,0 +1,18 @@
+.text-tag {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 2%;
+}
+.logo {
+    width: 170px;
+    height: 60px;
+}
+.h5 {
+    font-size: 20px;
+}
+.garis {
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: darkcyan;
+}
