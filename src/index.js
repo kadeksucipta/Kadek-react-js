@@ -16,6 +16,8 @@ import Komponen from "./Materi React/Komponen/Pembahasan/FunctionalComponent"
 import Routing from "./Materi React/Routing/Client/index"
 import Styling from "./Materi React/Styling/Inline/index"
 import Module from "./Materi React//Styling/Module"
+import { Provider } from 'react-redux';
+import store from './App/store';
 
 const router = createBrowserRouter([
   {
@@ -75,7 +77,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store={store}>
       <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );
 

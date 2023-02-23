@@ -3,9 +3,11 @@
 import Redux from "./Materi React/Redux";
 import ReduxX from "./Tugasreact/ReduxX";
 import Login from "./Tugasreact/Routing/Page/Login"
+import HookNews from "./Tugasreact/Hook/HookNews";
+import FormValidation from "./Materi React/Form/index"
 
 export default function App() {
-  return <ReduxX/>;
+  return <HookNews />;
 
 
       /* <React.Fragment>

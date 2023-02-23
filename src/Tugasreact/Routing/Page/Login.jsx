@@ -6,15 +6,26 @@ import { faKey } from "@fortawesome/free-solid-svg-icons"
 import { useNavigate } from "react-router-dom"
 import React from "react"
 import { Icons } from "react-toastify"
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { setUserData } from "../../../App/features/Login/Actions"
 
 const Login  = () => {
+    const [user, setUser] = useState ({
+        email: "",
+        password: ""
+    })
+    const dispatch = useDispatch()
     const navigate = useNavigate()
     const goToHome = () => {
+        // console.log("state user", user)
+        dispatch(setUserData(user))
         navigate("/Home")
     }
     const goToError = () => {
         navigate("/Error")
     }
+
 
     // state = {
     //     isPasswordShown : false
@@ -31,8 +42,8 @@ const Login  = () => {
             <div className="box">
                 <h2>Login</h2>
                 <form action="">
-                <input type="email" placeholder="Email" /><FontAwesomeIcon icon={faUser} />
-                <input type="password" name="" id="" placeholder="Password" /><FontAwesomeIcon icon={faKey} />
+                <input onChange={e => setUser({...user, email: e.target.value})} type="email" placeholder="Email" /><FontAwesomeIcon icon={faUser} />
+                <input onChange={e => setUser({...user, password: e.target.value})} type="password" name="" id="" placeholder="Password" /><FontAwesomeIcon icon={faKey} />
                 </form>
                 <button onClick={() => goToHome()}>Login</button>
                 <p>Forgot password ?</p>

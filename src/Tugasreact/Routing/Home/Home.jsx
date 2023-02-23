@@ -7,9 +7,11 @@ import code from "../../../code.png"
 import dev from "./dev.png"
 import "./styleHome.css"
 import React from "react"
+import { useSelector } from "react-redux"
 
 const Home = () => {
     const navigate = useNavigate()
+    const { user } = useSelector(state => state.login)
     const goToHome = () => {
         navigate("/Menu")
     }

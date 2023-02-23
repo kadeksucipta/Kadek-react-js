@@ -1,74 +1,27 @@
 .navbar {
   background: #005559;
 }
-input {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 6%;
-    margin-right: 6%;
-    padding-left: 10px;
-    padding-bottom: 4px;
-    width: 81%;
-    height: 35px;
-    border-radius: 10px;
-    border: 2px solid black;
-    border-color: rgb(179, 179, 179);
-    
-  }
   
 .jarak {
     padding: 15px 15px 15px 15px;
-  }
+}
 .card {
     display: flex;
-    justify-content: baseline;
+    justify-content: center;
     border-radius: 5px;
-  }
+}
 .card-group {
     gap: 20px;
     display: flex;
     margin-left: 7%;
     width: 86%;
-  }
-button {
-    display: flex;
-    max-width: 100%;
-    position: absolute;
-    justify-content: center;
-    text-align: center;
-    padding: 5px;
-    margin-left: 87.8%;
-    top: 11.2%;
-    width: 6%;
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    background: #004549;
-    height: 35px;
-    border: 2px;
-    border-color: #003b3e;;
-  }
-button:hover {
-    display: flex;
-    max-width: 100%;
-    position: absolute;
-    justify-content: center;
-    text-align: center;
-    margin-left: 87.5%;
-    top: 11.2%;
-    width: 6%;
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    background: #00565b;
-    height: 35px;
-    border: 2px;
-    border-color: #006166;
-  }
+}
+
+
 .btn {
     background: rgb(0, 136, 82);
     color: white;
-    margin: auto;
+    float: left;
 }
 
 .btn:hover {
@@ -78,7 +31,7 @@ button:hover {
 }
 
 img{
-  width: 110%;
+  width: 100%;
 }
 .custom-loader {
     width: 50px;
@@ -90,7 +43,7 @@ img{
       #0000 calc(100% - 8px),
       #000 0
     );
-    animation: s3 2s infinite linear;
+    animation: s3 1s infinite linear;
   }
   @keyframes s3 {
     to {
@@ -102,5 +55,5 @@ img{
     width: 100%;
     justify-content: center;
     align-items: center;
-    text-align: center;
-  }
+    text-align: left;
+}
